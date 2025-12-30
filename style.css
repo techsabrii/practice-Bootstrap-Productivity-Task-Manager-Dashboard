@@ -1,0 +1,71 @@
+:root {
+    --primary-color: #0d6efd;
+    --bg-light: #f8f9fc;
+    --soft-primary: #e7f0ff;
+    --soft-success: #e6f7ef;
+    --soft-warning: #fff4e5;
+    --soft-info: #e0f7fa;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: #334155;
+}
+
+/* Navbar Enhancements */
+.navbar {
+    height: 70px;
+}
+
+/* Stat Cards */
+.stat-card {
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-shape {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+/* Custom Badges (Soft UI) */
+.bg-soft-primary { background-color: var(--soft-primary) !important; }
+.bg-soft-success { background-color: var(--soft-success) !important; }
+.bg-soft-warning { background-color: var(--soft-warning) !important; }
+.bg-soft-info { background-color: var(--soft-info) !important; }
+
+/* Table Styling */
+.table thead th {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    color: #64748b;
+    border-top: none;
+}
+
+.table td {
+    padding: 1rem 0.75rem;
+}
+
+/* Form Styling */
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+    background-color: #fff !important;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
